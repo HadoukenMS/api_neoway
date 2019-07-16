@@ -1,7 +1,6 @@
 ## Sobre API - Neoway
 
-<p>Este projeto foi desenvolvido para fins de processo seletivo, aplicado pela empresa Neoway.</p>
-<p>Foi criado uma interface UI para gerenciamento de CPF e CNPJ, portando o sistema consiste em:</p>
+<p>Foi criada uma interface UI para gerenciamento de CPF e CNPJ, portando o sistema consiste em:</p>
 <ul>
     <li>Criar Registro</li>
     <li>Listar Registros</li>
