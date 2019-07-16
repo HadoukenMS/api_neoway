@@ -1,0 +1,38 @@
+version: "3.1" 
+services:
+  app:
+      container_name: neoway_app
+      build: .
+      ports:
+        - "8000:80"
+      links:
+        - mongodb
+      volumes:
+        - ./:/usr/share/nginx/
+      networks:
+        - app-network
+  
+  # Data persistence service layer
+  mongodb:
+      image: mongo:latest
+      container_name: neoway_db
+      expose:
+        - "27017"
+      ports:
+        - "27017:27017"
+      restart: always
+      environment:
+        - MONGO_DATA_DIR=data/mongodb
+        - MONGO_LOG_DIR=data/logs/
+        - MONGODB_DATABASE=laravel_db
+        - MONGODB_USER=mongodb 
+        - MONGODB_PASS=mongodb
+      volumes:
+        - ./database/.mongodb/data/:/data/db
+      networks:
+        - app-network
+networks:
+  app-network:
+    driver: bridge
+
+
