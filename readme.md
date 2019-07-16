@@ -37,7 +37,7 @@ como por exemplo:
 ## Instalação
 <p>Requisito obrigatório que a máquina tenha o Docker e o Docker-Compose instalados</p>
 
-1. Deverá ter uma conta no **[Docker Hub](https://hub.docker.com/)**.
+1. Container disponibilizado em **[Docker Hub](https://hub.docker.com/)**.
 2. Criar uma pasta no seu computador/servidor com o nome que desejar.
 3. Criar um arquivo com o nome docker-compose.yml
 4. Incluir as seguintes linhas ao arquivo:
